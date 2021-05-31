@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kQiSKa7_2KSZ7PBImzypZBQ0itQAfKKcL6h4j3X49csWRimJ4yWEESltG90he4CsC79-cnbQkb8ZEJy2_bjmxw" charset="UTF-8"></script>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+tr, td{
+  text-align: left;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+#top1
+{
+	display: none;
+	position: fixed;
+	left: 30px;
+	z-index: 99;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 4px;
+	display: block;
+}
+
+#top1:hover 
+{
+	background-color: grey;
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1 align="center">Welcome to Arash E-Profile</h1>
+
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+	<div align="center" class="menuitem"><img src="image/arash.jpg" alt="Arash" style="border-radius: 50%" width="80%"></div>
+    <div align="center" class="menuitem"><a href="profile.html">Profile</a></div>
+    <div align="center" class="menuitem"><a href="resume.html">Resume</a></div>
+    <div align="center" class="menuitem"><a href="portfolio.html">Portfolio</a></div>
+    <div align="center" class="menuitem"><a href="contact.html">Contact Me</a></div>
+	<div align="center" class="menuitem"><a href="gallery.html">Gallery</a></div>
+  </div>
+
+  <div class="main">
+    <h2>Gallery</h2>
+    <p>Memories will never fade.</p>
+	
+	<div class="container" align="center">
+		<p id="family"></p>
+		<h2>Family</h2>
+		<img src="image/family3.jpg" alt="family" width="80%"><br>
+		<img src="image/family4.jpg" alt="family" width="40%">
+		<img src="image/family2.jpg" alt="family" width="40%">
+		<img src="image/family5.jpg" alt="family" width="80%"><br><br>
+		<a href="#family"><button class="btn default" style="bottom: 260px">Family</button></a>
+		<a href="#bfriend"><button class="btn default" style="bottom: 220px">Bestfriend</button></a>
+		<a href="#cmate"><button class="btn default" style="bottom: 180px">Classmate</button></a>
+		<a href="#friend"><button class="btn default" style="bottom: 140px">Friends</button></a>
+		<a href="#band"><button class="btn default" style="bottom: 100px">Bandmate</button></a>
+		<a href="#video"><button class="btn default" style="bottom: 60px">Video & Audio</button></a>
+		<br><hr>
+		
+		<p id="bfriend"></p>
+		<h2>Bestfriend</h2>
+		<img src="image/bestfriend.jpg" alt="bestfriend" width="40%"><br><br>
+		<a href="#family"><button class="btn default" style="bottom: 260px">Family</button></a>
+		<a href="#bfriend"><button class="btn default" style="bottom: 220px">Bestfriend</button></a>
+		<a href="#cmate"><button class="btn default" style="bottom: 180px">Classmate</button></a>
+		<a href="#friend"><button class="btn default" style="bottom: 140px">Friends</button></a>
+		<a href="#band"><button class="btn default" style="bottom: 100px">Bandmate</button></a>
+		<a href="#video"><button class="btn default" style="bottom: 60px">Video & Audio</button></a>
+		<br><hr>
+		
+		<p id="cmate"></p>
+		<h2>Classmate</h2>
+		<img src="image/kelas1.jpg" alt="kelas" width="40%">
+		<img src="image/kelas2.jpg" alt="kelas" width="40%">
+		<img src="image/kelas3.jpg" alt="kelas" width="40%">
+		<img src="image/kelas4.jpg" alt="kelas" width="40%">
+		<img src="image/kelas5.jpg" alt="kelas" width="40%">
+		<img src="image/kelas6.jpg" alt="kelas" width="40%">
+		<img src="image/kelas7.jpg" alt="kelas" width="40%">
+		<img src="image/kelas8.jpg" alt="kelas" width="40%"><br><br>
+		<a href="#family"><button class="btn default" style="bottom: 260px">Family</button></a>
+		<a href="#bfriend"><button class="btn default" style="bottom: 220px">Bestfriend</button></a>
+		<a href="#cmate"><button class="btn default" style="bottom: 180px">Classmate</button></a>
+		<a href="#friend"><button class="btn default" style="bottom: 140px">Friends</button></a>
+		<a href="#band"><button class="btn default" style="bottom: 100px">Bandmate</button></a>
+		<a href="#video"><button class="btn default" style="bottom: 60px">Video & Audio</button></a>
+		<br><hr>
+		
+		<p id="friend"></p>
+		<h2>Friends</h2>
+		<img src="image/f1.jpg" alt="friend" width="40%">
+		<img src="image/f6.jpg" alt="friend" width="40%">
+		<img src="image/f2.jpg" alt="friend" width="40%">
+		<img src="image/f3.jpg" alt="friend" width="40%">
+		<img src="image/f4.jpg" alt="friend" width="40%">
+		<img src="image/f5.jpg" alt="friend" width="40%">
+		<img src="image/f7.jpg" alt="friend" width="40%">
+		<img src="image/f8.jpg" alt="friend" width="40%"><br><br>
+		<a href="#family"><button class="btn default" style="bottom: 260px">Family</button></a>
+		<a href="#bfriend"><button class="btn default" style="bottom: 220px">Bestfriend</button></a>
+		<a href="#cmate"><button class="btn default" style="bottom: 180px">Classmate</button></a>
+		<a href="#friend"><button class="btn default" style="bottom: 140px">Friends</button></a>
+		<a href="#band"><button class="btn default" style="bottom: 100px">Bandmate</button></a>
+		<a href="#video"><button class="btn default" style="bottom: 60px">Video & Audio</button></a>
+		<br><hr>
+		
+		<p id="band"></p>
+		<h2>Bandmate</h2>
+		<img src="image/band1.jpg" alt="band" width="40%">
+		<img src="image/band2.jpg" alt="band" width="40%">
+		<img src="image/band3.jpg" alt="band" width="40%">
+		<img src="image/band4.jpg" alt="band" width="40%">
+		<img src="image/band5.jpg" alt="band" width="40%">
+		<img src="image/band6.jpg" alt="band" width="40%">
+		<img src="image/band8.jpg" alt="band" width="40%">
+		<img src="image/band9.jpg" alt="band" width="40%">
+		<img src="image/band10.jpg" alt="band" width="40%">
+		<img src="image/band11.jpg" alt="band" width="40%">
+		<img src="image/band12.jpg" alt="band" width="80%"><br><br>
+		<a href="#family"><button class="btn default" style="bottom: 260px">Family</button></a>
+		<a href="#bfriend"><button class="btn default" style="bottom: 220px">Bestfriend</button></a>
+		<a href="#cmate"><button class="btn default" style="bottom: 180px">Classmate</button></a>
+		<a href="#friend"><button class="btn default" style="bottom: 140px">Friends</button></a>
+		<a href="#band"><button class="btn default" style="bottom: 100px">Bandmate</button></a>
+		<a href="#video"><button class="btn default" style="bottom: 60px">Video & Audio</button></a>
+		<br><hr>
+		
+		<p id="video"></p>
+		<h2>UiTM Percussion Competition 2017 Video</h2>
+		<video width="60%" controls>
+			<source src="band.mp4" type="video/mp4">
+		</video>
+		<p>For full video
+		<a href="https://www.youtube.com/watch?v=KpRX7ltNFWA" target="_blank">click here</a>.
+		</p><hr>
+		
+		<h2>Song</h2>
+		<p id="audio"></p>
+		<audio controls="" autoplay="" loop="">
+			<source src="happier.mp3" type="audio/mpeg">
+		</audio>
+		
+
+	</div>
+  </div>
+
+  <div class="right">
+	<fieldset align="center" style="width:100%">
+		<legend><b>ABOUT ME</b></legend>
+		<p>I am enthusiastic and creative. My strengths are in planning, designing and developing. I am passionate about good communication and collaborating to 
+		facilitate creative problem-solving. I enjoy meeting new challenges and utilizing my time-management and organizational skills to ensure that my work is 
+		completed to strict timelines, with a high-level of accuracy and attention to detail. I am committed to work to an exceptionally high standard in everything I do.</p>
+	</fieldset><br>
+	<fieldset align="center" style="width:100%">
+		<legend><b>MISSION</b></legend>
+		<i>"Be the best in my passion."</i>
+	</fieldset></td>
+	<fieldset align="center" style="width:100%">
+		<legend><b>VISSION</b></legend>
+		<i>"Seek for the knowledge as much as I can."</i>
+	</fieldset></td>
+	<fieldset align="center" style="width:100%">
+		<legend><b>MOTTO</b></legend>
+		<i>"It doesn't matter how slowly you go as long as you don't stop."</i>
+	</fieldset></td><br>
+  </div>
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+	<a href="https://twitter.com/">
+	<img src="image/twitter.png" border="0" alt="twitter icon" style="border-radius: 50%" width="15" height="15"> Twiter
+	</a>&emsp;
+	<a href="https://www.facebook.com/">
+	<img src="image/facebook.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Facebook
+	</a>&emsp;
+	<a href="https://www.instagram.com/">
+	<img src="image/insta.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Instagram
+	</a>
+	<br><br>
+	2021 © Arash - All Rights Reserved
+</div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kQiSKa7_2KSZ7PBImzypZBQ0itQAfKKcL6h4j3X49csWRimJ4yWEESltG90he4CsC79-cnbQkb8ZEJy2_bjmxw" charset="UTF-8"></script>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+tr, td{
+  text-align: left;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+#top1
+{
+	display: none;
+	position: fixed;
+	right: 30px;
+	z-index: 99;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 4px;
+	display: block;
+}
+
+#top1:hover 
+{
+	background-color: grey;
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1 align="center">Welcome to Arash E-Profile</h1>
+
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+	<div align="center" class="menuitem"><img src="image/arash.jpg" alt="Arash" style="border-radius: 50%" width="80%"></div>
+    <div align="center" class="menuitem"><a href="profile.html">Profile</a></div>
+    <div align="center" class="menuitem"><a href="resume.html">Resume</a></div>
+    <div align="center" class="menuitem"><a href="portfolio.html">Portfolio</a></div>
+    <div align="center" class="menuitem"><a href="contact.html">Contact Me</a></div>
+	<div align="center" class="menuitem"><a href="gallery.html">Gallery</a></div>
+  </div>
+
+  <div class="main">
+    <h2>Contact Me</h2>
+    <p>Feel free to contact me and leave your message here. (Not working due to static pages in github hosting) </p>
+
+	<div style="overflow-x:auto;">
+		<div class="container">
+		<form action="/action_page.php">
+			<label for="name"><b>Full Name:</b></label>
+			<input type="text" id="name" name="name" placeholder="Ahmad Abu">
+			<br>
+					
+			<label for="gender"><b>Gender: </b></label>
+			<input type="radio" name="gender" value="male" checked>Male
+			<input type="radio" name="gender" value="female">Female
+			<br><br>
+			
+			<label for="email"><b>Email:</b></label>
+			<input type="text" id="email" name="email" placeholder="example@gmail.com">
+			<br>
+			
+			<label for="phoneNo"><b>Phone Number:</b></label>
+			<input type="text" id="phoneNo" name="phoneNo" placeholder="0123456789">
+			<br>
+			
+			<label for="option"><b>Purpose of Contact:</b></label>
+			<select name="option" id="opt">
+			<option>-Select Purpose-</option>
+			<option>For Hiring</option>
+			<option>Meeting</option>
+			<option>Others</option>
+			</select>
+			<br>
+
+			<label for="message"><b>Message:</b></label>
+			<textarea id="message" name="message" placeholder="Leave your message here.." style="height:80px"></textarea>
+			<br>
+			
+			<label for="gender"><b>Respond Your Message by: </b></label><br><br>
+			<input type="checkbox" name="contact" value="phone1" checked>Phone Number
+			<input type="checkbox" name="contact1" value="email1">Email
+			<br><br>
+			
+			<div align="right">
+			<button type="reset" class="btn default">Reset</button>
+			<button type="submit" class="btn success">Submit</button>
+			</div>
+		</form>
+		</div>
+	</div>
+  </div>
+
+  <div class="right">
+	<fieldset align="center" style="width:100%">
+		<legend><b>ABOUT ME</b></legend>
+		<p>I am enthusiastic and creative. My strengths are in planning, designing and developing. I am passionate about good communication and collaborating to 
+		facilitate creative problem-solving. I enjoy meeting new challenges and utilizing my time-management and organizational skills to ensure that my work is 
+		completed to strict timelines, with a high-level of accuracy and attention to detail. I am committed to work to an exceptionally high standard in everything I do.</p>
+	</fieldset><br>
+	<fieldset align="center" style="width:100%">
+		<legend><b>MISSION</b></legend>
+		<i>"Be the best in my passion."</i>
+	</fieldset></td>
+	<fieldset align="center" style="width:100%">
+		<legend><b>VISSION</b></legend>
+		<i>"Seek for the knowledge as much as I can."</i>
+	</fieldset></td>
+	<fieldset align="center" style="width:100%">
+		<legend><b>MOTTO</b></legend>
+		<i>"It doesn't matter how slowly you go as long as you don't stop."</i>
+	</fieldset></td><br>
+  </div>
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+	<a href="https://twitter.com/">
+	<img src="image/twitter.png" border="0" alt="twitter icon" style="border-radius: 50%" width="15" height="15"> Twiter
+	</a>&emsp;
+	<a href="https://www.facebook.com/">
+	<img src="image/facebook.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Facebook
+	</a>&emsp;
+	<a href="https://www.instagram.com/">
+	<img src="image/insta.png" border="0" alt="fb icon" style="border-radius: 50%" width="15" height="15"> Instagram
+	</a>
+	<br><br>
+	2021 © Arash - All Rights Reserved
+</div>
+
+</body>
+</html>
